@@ -1,0 +1,67 @@
+<section class="core-values-section">
+  <h2 class="core-values-heading">Our Core Values</h2>
+
+  <div class="core-values-container">
+    <!-- 1. Integrity -->
+    <div class="core-value-item" {{on "click" this.toggleCopperModal}}>
+      <div class="core-value-image-wrapper small">
+        <img
+          src="/assets/copper.jpg"
+          alt="Integrity"
+          class="core-value-image small"
+        />
+      </div>
+      <h3 class="core-value-title">Copper</h3>
+      <p class="core-value-description">
+        We uphold the highest standards of honesty and transparency in all our
+        dealings.
+      </p>
+    </div>
+
+    {{#if this.showCopperModal}}
+      <CopperPopup @onClose={{this.toggleCopperModal}} />
+    {{/if}}
+
+    <!-- 2. Excellence -->
+    <div class="core-value-item">
+      <div class="core-value-image-wrapper small">
+        <img
+          src="/assets/alluminium.jpg"
+          alt="Excellence"
+          class="core-value-image small"
+        />
+      </div>
+      <h3 class="core-value-title">Alluminium</h3>
+      <p class="core-value-description">We deliver top-tier solutions with
+        precision, consistency, and innovation.</p>
+    </div>
+
+    <!-- 3. Teamwork -->
+    <div class="core-value-item">
+      <div class="core-value-image-wrapper small">
+        <img
+          src="/assets/brass.jpg"
+          alt="Teamwork"
+          class="core-value-image small"
+        />
+      </div>
+      <h3 class="core-value-title">Brass</h3>
+      <p class="core-value-description">We collaborate to achieve shared goals
+        and create greater value together.</p>
+    </div>
+
+    <!-- 4. Innovation -->
+    <div class="core-value-item">
+      <div class="core-value-image-wrapper small">
+        <img
+          src="/assets/maize-rice.jpg"
+          alt="Innovation"
+          class="core-value-image small"
+        />
+      </div>
+      <h3 class="core-value-title">Rice & Wheat</h3>
+      <p class="core-value-description">We drive progress by embracing new ideas
+        and cutting-edge technology.</p>
+    </div>
+  </div>
+</section>

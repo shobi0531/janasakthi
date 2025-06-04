@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
 export default class CopperPopupComponent extends Component {
-  @tracked selectedItem = null;
+  @tracked selectedItem = 'copper-wires';
 
   @action
   showImageFor(item) {

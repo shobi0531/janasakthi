@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
 export default class BrassPopupComponent extends Component {
-  @tracked selectedItem = null;
+  @tracked selectedItem = 'brass-coils';
 
   @action
   showImageFor(item) {

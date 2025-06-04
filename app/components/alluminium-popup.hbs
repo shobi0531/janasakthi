@@ -1,51 +1,59 @@
 <div class="modal-backdrop" {{on "click" this.handleBackdropClick}}>
-  <div class="modal-box relative" {{on "click" this.stopPropagation}}>
 
-    <!-- Close Button -->
-    <button
-      class="modal-close-button"
-      {{on "click" this.closePopup}}
-      aria-label="Close"
-    >
-      &times;
-    </button>
-
-    <!-- Image Display Area -->
-    <div class="modal-image-area">
-      {{#if this.selectedItem}}
-        <img
-          src={{this.getImagePath this.selectedItem}}
-          alt={{this.selectedItem}}
-          class="modal-image"
-        />
-      {{else}}
-        <p>Select an item to view its image</p>
-      {{/if}}
-
-    </div>
-
-    <!-- Buttons -->
-    <div class="modal-content">
-      <button
-        class="modal-button"
-        {{on "click" (fn this.showImageFor "alluminium-scrap")}}
-      >Alluminium Scrap</button>
-      <button
-        class="modal-button"
-        {{on "click" (fn this.showImageFor "alluminium-ingots")}}
-      >Ingots</button>
-      <button
-        class="modal-button"
-        {{on "click" (fn this.showImageFor "alluminium-coils")}}
-      >Coils</button>
-
-      <button
-        class="modal-button modal-contact-button"
-        {{on "click" this.contactUs}}
-      >
-        Contact Us!
+  {{!-- Contact Form Modal --}}
+  {{#if this.isContactPopupOpen}}
+    <div class="contact-modal-box" {{on "click" this.stopPropagation}}>
+      <button class="modal-close-button" type="button" aria-label="Close" {{on "click" this.closePopup}}>
+        &times;
       </button>
+
+      <ContactForm
+        @onClose={{this.closePopup}}
+        @whatsappNumber={{this.selectedNumber}}
+        @title={{this.selectedTitle}}
+      />
     </div>
 
-  </div>
+  {{else}}
+
+  {{!-- Main Image Modal --}}
+    <div class="modal-box relative" {{on "click" this.stopPropagation}}>
+
+      <button
+        class="modal-close-button" aria-label="Close" type="button" {{on "click" this.closePopup}}
+      >
+        &times;
+      </button>
+
+      <div class="modal-image-area">
+        {{#if this.selectedItem}}
+          <img
+            src={{this.getImagePath this.selectedItem}}
+            alt={{this.selectedItem}}
+            class="modal-image"
+          />
+        {{else}}
+          <p>Select an item to view its image</p>
+        {{/if}}
+      </div>
+
+      <div class="modal-content">
+        <button
+          class="modal-button" type="button" {{on "click" (fn this.showImageFor "alluminium-scrap")}}
+        >Alluminium Scrap</button>
+        <button
+          class="modal-button" type="button" {{on "click" (fn this.showImageFor "alluminium-ingots")}}
+        >Ingots</button>
+        <button
+          class="modal-button" type="button" {{on "click" (fn this.showImageFor "alluminium-coils")}}
+        >Coils</button>
+
+        <button class="modal-button modal-contact-button" type="button" {{on "click" this.openContactPopup}}>
+          Contact Us!
+        </button>
+      </div>
+
+    </div>
+  {{/if}}
+
 </div>

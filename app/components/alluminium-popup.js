@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
 export default class AlluminiumPopupComponent extends Component {
-  @tracked selectedItem = null;
+  @tracked selectedItem = 'alluminium-coils';
 
   @action
   showImageFor(item) {

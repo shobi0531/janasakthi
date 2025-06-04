@@ -1,44 +1,135 @@
-<div style="background-color: #f9ede8; padding: 2rem;">
-  <div
-    style="display: flex; justify-content: space-between; align-items: center;"
-  >
+<style>
+  .hero-section {
+    background-color: #f9ede8;
+    padding: 2rem;
+  }
+
+  .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image {
+    width: 400px;
+    border-radius: 1rem;
+  }
+
+  .why-choose {
+    margin-top: 5rem;
+  }
+
+  .why-choose h2 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .feature-item {
+    width: 30%;
+    min-width: 250px;
+  }
+
+  .feature-item p:first-child {
+    font-weight: bold;
+  }
+
+  .feature-item hr {
+    margin: 0.5rem 0;
+  }
+
+  .feature-item p:nth-child(3) {
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  .feature-item p:last-child {
+    color: gray;
+  }
+
+  /* ✅ Mobile Optimization */
+  @media (max-width: 768px) {
+    .hero-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .features {
+      flex-direction: column;
+    }
+
+    .feature-item {
+      width: 100%;
+    }
+
+    .why-choose {
+      margin-top: 3rem;
+    }
+
+    .why-choose h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
+<div class="hero-section">
+  <div class="hero-top">
     <div>
-      <h1
-        style="font-size: 4rem; font-weight: bold; margin-bottom: 1rem;"
-      >Janasakthi Group</h1>
+      <h1 class="hero-title">Janasakthi Group</h1>
     </div>
-<!--     <div>
+    <div>
       <img
         src="/assets/port-image.jpg"
         alt="Port with containers"
-        style="width: 400px; border-radius: 1rem;"
+        class="hero-image"
       />
-    </div> -->
+    </div>
   </div>
 
-  <div style="margin-top: 5rem;">
-    <h2 style="font-size: 2rem; font-weight: 500;">Why Choose Us?</h2>
-
-    <div
-      style="display: flex; justify-content: space-between; margin-top: 3rem;"
-    >
-      <div style="width: 30%;">
-        <p style="font-weight: bold;">01</p>
+  <div class="why-choose">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature-item">
+        <p>01</p>
         <hr />
-        <p style="font-weight: 500; margin-top: 1rem;">Vast Network</p>
-        <p style="color: gray;">Global reach, local expertise.</p>
+        <p>Vast Network</p>
+        <p>Global reach, local expertise.</p>
       </div>
-      <div style="width: 30%;">
-        <p style="font-weight: bold;">02</p>
+      <div class="feature-item">
+        <p>02</p>
         <hr />
-        <p style="font-weight: 500; margin-top: 1rem;">Safe Trade</p>
-        <p style="color: gray;">Efficient, reliable, and secure.</p>
+        <p>Safe Trade</p>
+        <p>Efficient, reliable, and secure.</p>
       </div>
-      <div style="width: 30%;">
-        <p style="font-weight: bold;">03</p>
+      <div class="feature-item">
+        <p>03</p>
         <hr />
-        <p style="font-weight: 500; margin-top: 1rem;">Easy Process</p>
-        <p style="color: gray;">From sourcing to delivery, seamless.</p>
+        <p>Easy Process</p>
+        <p>From sourcing to delivery, seamless.</p>
       </div>
     </div>
   </div>

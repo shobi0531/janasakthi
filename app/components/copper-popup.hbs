@@ -6,12 +6,19 @@
       <button class="modal-close-button" type="button" aria-label="Close" {{on "click" this.closePopup}}>
         &times;
       </button>
-      <ContactForm @onClose={{this.closePopup}} />
+
+      <ContactForm
+        @onClose={{this.closePopup}}
+        @whatsappNumber={{this.selectedNumber}}
+        @title={{this.selectedTitle}}
+      />
     </div>
+
   {{else}}
+
   {{!-- Main Image Modal --}}
     <div class="modal-box relative" {{on "click" this.stopPropagation}}>
-      <button class="modal-close-button" aria-label="Close" type="button" {{on "click" this.closePopup}}>
+      <button class="modal-close-button" type="button" aria-label="Close" {{on "click" this.closePopup}}>
         &times;
       </button>
 

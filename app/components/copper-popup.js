@@ -4,7 +4,9 @@ import { tracked } from '@glimmer/tracking';
 
 export default class CopperPopupComponent extends Component {
   @tracked selectedItem = 'copper-wires';
-  @tracked isContactPopupOpen = false; // New property
+  @tracked isContactPopupOpen = false;
+  @tracked selectedNumber = null;  // To store WhatsApp number
+  @tracked selectedTitle = null;   // To store title for contact form
 
   @action
   showImageFor(item) {
@@ -26,6 +28,8 @@ export default class CopperPopupComponent extends Component {
   closePopup() {
     this.selectedItem = null;
     this.isContactPopupOpen = false;
+    this.selectedNumber = null;
+    this.selectedTitle = null;
     this.args.onClose?.();
   }
 
@@ -43,8 +47,9 @@ export default class CopperPopupComponent extends Component {
 
   @action
   openContactPopup() {
-    // Close current image popup and open contact popup
     this.selectedItem = null;
+    this.selectedNumber = '919786758203'; // <-- Put the copper WhatsApp number here
+    this.selectedTitle = 'Contact for Copper Products'; // <-- Put the copper product title here
     this.isContactPopupOpen = true;
   }
 }

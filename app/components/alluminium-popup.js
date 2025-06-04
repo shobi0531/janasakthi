@@ -2,12 +2,14 @@ import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
-export default class AlluminiumPopupComponent extends Component {
+export default class AluminiumPopupComponent extends Component {
   @tracked selectedItem = 'alluminium-coils';
+  @tracked isContactPopupOpen = false;
+  @tracked selectedNumber = null;
+  @tracked selectedTitle = null;
 
   @action
   showImageFor(item) {
-    console.log('Selected:', item);
     this.selectedItem = item;
   }
 
@@ -19,15 +21,25 @@ export default class AlluminiumPopupComponent extends Component {
         return '/assets/alluminium-ingots.jpg';
       case 'alluminium-scrap':
         return '/assets/alluminium-scrap.jpg';
-
       default:
         return null;
     }
   }
 
   @action
+  openContactPopup() {
+    this.selectedItem = null;
+    this.selectedNumber = '919003921870';
+    this.selectedTitle = 'Contact for Aluminium Products';
+    this.isContactPopupOpen = true;
+  }
+
+  @action
   closePopup() {
     this.selectedItem = null;
+    this.isContactPopupOpen = false;
+    this.selectedNumber = null;
+    this.selectedTitle = null;
     this.args.onClose?.();
   }
 

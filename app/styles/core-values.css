@@ -11,6 +11,11 @@
   font-weight: bold;
   margin-bottom: 4rem;
 }
+.click-hint {
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+}
 
 .core-values-container {
   display: flex;

@@ -10,6 +10,15 @@
     {{on "input" this.updateName}}
   />
 
+  <label for="address">Address:</label>
+  <input
+    id="address"
+    type="text"
+    placeholder="Your address"
+    value={{this.address}}
+    {{on "input" this.updateAddress}}
+  />
+
   <label for="message">Message:</label>
   <textarea
     id="message"

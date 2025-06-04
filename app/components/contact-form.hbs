@@ -1,0 +1,22 @@
+<div class="contact-popup">
+  <h2>Contact Us</h2>
+
+  <label for="name">Name:</label>
+  <input
+    id="name"
+    type="text"
+    placeholder="Your name"
+    value={{this.name}}
+    {{on "input" this.updateName}}
+  />
+
+  <label for="message">Message:</label>
+  <textarea
+    id="message"
+    placeholder="Your message"
+    value={{this.message}}
+    {{on "input" this.updateMessage}}
+  ></textarea>
+
+  <button {{on "click" this.sendMessage}}>Send</button>
+</div>

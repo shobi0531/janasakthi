@@ -4,33 +4,28 @@ import { tracked } from '@glimmer/tracking';
 
 export default class CopperPopupComponent extends Component {
   @tracked selectedItem = 'copper-wires';
+  @tracked isContactPopupOpen = false; // New property
 
   @action
   showImageFor(item) {
-    console.log('Selected:', item);
     this.selectedItem = item;
   }
 
   getImagePath(item) {
     switch (item) {
-      case 'copper-wires':
-        return '/assets/copper-wires.jpg';
-      case 'rods':
-        return '/assets/rods.jpg';
-      case 'cathodes':
-        return '/assets/cathodes.jpg';
-      case 'coils':
-        return '/assets/coils.jpg';
-      case 'copper-spare-parts':
-        return '/assets/copper-spare-parts.jpg';
-      default:
-        return null;
+      case 'copper-wires': return '/assets/copper-wires.jpg';
+      case 'rods': return '/assets/rods.jpg';
+      case 'cathodes': return '/assets/cathodes.jpg';
+      case 'coils': return '/assets/coils.jpg';
+      case 'copper-spare-parts': return '/assets/copper-spare-parts.jpg';
+      default: return null;
     }
   }
 
   @action
   closePopup() {
     this.selectedItem = null;
+    this.isContactPopupOpen = false;
     this.args.onClose?.();
   }
 
@@ -44,5 +39,12 @@ export default class CopperPopupComponent extends Component {
   @action
   stopPropagation(event) {
     event.stopPropagation();
+  }
+
+  @action
+  openContactPopup() {
+    // Close current image popup and open contact popup
+    this.selectedItem = null;
+    this.isContactPopupOpen = true;
   }
 }

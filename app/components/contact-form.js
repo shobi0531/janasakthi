@@ -4,13 +4,19 @@ import { action } from '@ember/object';
 
 export default class ContactFormComponent extends Component {
   @tracked name = '';
+  @tracked address = '';
   @tracked message = '';
 
-  whatsappNumber = '918610606873';
+  whatsappNumber = '918610606873'; 
 
   @action
   updateName(event) {
     this.name = event.target.value;
+  }
+
+  @action
+  updateAddress(event) {
+    this.address = event.target.value;
   }
 
   @action
@@ -20,15 +26,16 @@ export default class ContactFormComponent extends Component {
 
   @action
   sendMessage() {
-    if (!this.name.trim() || !this.message.trim()) {
-      alert('Please fill in both name and message.');
+    if (!this.name.trim() || !this.address.trim() || !this.message.trim()) {
+      alert('Please fill in all fields: name, address, and message.');
       return;
     }
 
-    let text = `Name: ${this.name}\n\n${this.message}`;
-    let encodedText = encodeURIComponent(text);
-    let url = `https://wa.me/${this.whatsappNumber}?text=${encodedText}`;
+    const text = `Name: ${this.name}\nAddress: ${this.address}\n\n${this.message}`;
+    const encodedText = encodeURIComponent(text);
+    const url = `https://wa.me/${this.whatsappNumber}?text=${encodedText}`;
 
+    alert('You’ll be redirected to WhatsApp. Please tap "Send" in the app.');
     window.open(url, '_blank');
 
     this.args.onClose?.();

@@ -7,7 +7,9 @@ export default class ContactFormComponent extends Component {
   @tracked address = '';
   @tracked message = '';
 
-  whatsappNumber = '919786758203'; 
+  get whatsappNumber() {
+    return this.args.whatsappNumber; // fallback if not passed
+  }
 
   @action
   updateName(event) {
@@ -27,17 +29,15 @@ export default class ContactFormComponent extends Component {
   @action
   sendMessage() {
     if (!this.name.trim() || !this.address.trim() || !this.message.trim()) {
-      alert('Please fill in all fields: name, address, and message.');
+      alert('Please fill in all fields.');
       return;
     }
 
-    const text = `Name: ${this.name}\nAddress: ${this.address}\n\n${this.message}`;
-    const encodedText = encodeURIComponent(text);
-    const url = `https://wa.me/${this.whatsappNumber}?text=${encodedText}`;
+    let text = `Name: ${this.name}\nAddress: ${this.address}\n\n${this.message}`;
+    let encodedText = encodeURIComponent(text);
+    let url = `https://wa.me/${this.whatsappNumber}?text=${encodedText}`;
 
-    alert('You’ll be redirected to WhatsApp. Please tap "Send" in the app.');
     window.open(url, '_blank');
-
     this.args.onClose?.();
   }
 }

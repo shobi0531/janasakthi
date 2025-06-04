@@ -6,6 +6,24 @@ export default class CoreValuesComponent extends Component {
   @tracked showAlluminiumModal = false;
   @tracked showCopperModal = false;
   @tracked showBrassModal = false;
+  @tracked showContactForm = false;
+
+  @action
+  openContactForm() {
+    this.showContactForm = true;
+  }
+
+  @action
+  toggleContactForm() {
+    this.showContactForm = !this.showContactForm;
+  }
+
+  @action
+  stopPropagation(event) {
+    event.stopPropagation();
+  }
+
+
 
   @action
   toggleAlluminiumModal() {

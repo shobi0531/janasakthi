@@ -18,6 +18,15 @@
     value={{this.address}}
     {{on "input" this.updateAddress}}
   />
+  
+  <label for="phone">Phone Number:</label>
+  <input
+    id="phone"
+    type="tel"
+    placeholder="Your phone number"
+    value={{this.phone}}
+    {{on "input" this.updatePhone}}
+  />
 
   <label for="message">Message:</label>
   <textarea

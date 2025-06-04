@@ -23,13 +23,15 @@
 .core-value-item {
   flex: 1 1 300px;
   max-width: 300px;
+  transition: transform 0.3s ease;
 }
+
 .core-value-item:hover {
   transform: scale(1.1);
 }
+
 .core-value-image-wrapper {
   background-color: #fff3e0;
-
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -43,7 +45,7 @@
 
 .core-value-image.small {
   width: 200px;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
 }
 
 .core-value-title {
@@ -55,7 +57,7 @@
   color: #555;
 }
 
-/* Ensure the modal background dims the page */
+/* Modal Styles */
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -64,11 +66,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
-/* Modal box container */
 .modal-box {
-  position: relative; /* ✅ Add this line */
+  position: relative;
   background-color: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -80,7 +82,6 @@
   gap: 1rem;
 }
 
-/* Image area */
 .modal-image {
   width: 50%;
   border-radius: 0.75rem;
@@ -88,7 +89,6 @@
   aspect-ratio: 1 / 1;
 }
 
-/* Buttons section */
 .modal-content {
   width: 50%;
   display: flex;
@@ -96,9 +96,8 @@
   gap: 0.5rem;
 }
 
-/* Primary item buttons */
 .modal-button {
-  background-color: #ffe4e6; /* pink-100 */
+  background-color: #ffe4e6;
   border: 2px solid transparent;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -109,13 +108,12 @@
 }
 
 .modal-button:hover {
-  background-color: #fc8193; /* pink-500 border on hover */
+  background-color: #fc8193;
 }
 
-/* CTA Button */
 .modal-contact-button {
   margin-top: auto;
-  background-color: #fbcfe8; /* pink-200 */
+  background-color: #fbcfe8;
   font-weight: 600;
 }
 
@@ -124,7 +122,7 @@
   top: 0.75rem;
   right: 0.75rem;
   font-size: 1.5rem;
-  color: #9ca3af; /* gray-400 */
+  color: #9ca3af;
   background: none;
   border: none;
   cursor: pointer;
@@ -134,7 +132,7 @@
 }
 
 .modal-close-button:hover {
-  color: #4b5563; /* gray-600 */
+  color: #4b5563;
 }
 
 .modal-image-area {
@@ -143,4 +141,68 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+}
+
+/* -------------------- */
+/* ✅ Mobile Responsive */
+/* -------------------- */
+@media (max-width: 768px) {
+  .core-values-section {
+    padding: 2rem 1rem;
+  }
+
+  .core-values-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .core-values-container {
+    gap: 2rem;
+  }
+
+  .core-value-item {
+    max-width: 100%;
+  }
+
+  .core-value-image-wrapper.small {
+    width: 80px;
+    height: 80px;
+  }
+
+  .core-value-image.small {
+    width: 150px;
+  }
+
+  .core-value-title {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .core-value-description {
+    font-size: 0.95rem;
+  }
+
+  .modal-box {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .modal-image,
+  .modal-content,
+  .modal-image-area {
+    width: 100%;
+  }
+
+  .modal-image {
+    max-height: 200px;
+  }
+
+  .modal-button {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .modal-contact-button {
+    font-size: 1.1rem;
+  }
 }

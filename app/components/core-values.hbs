@@ -69,6 +69,7 @@
           src="/assets/maize-rice.jpg"
           alt="Innovation"
           class="core-value-image small"
+          {{on "click" this.openContactForm}}
         />
       </div>
       <h3 class="core-value-title">Rice & Wheat</h3>
@@ -77,5 +78,29 @@
         <br><span class="click-hint">Click image for more details.</span>
       </p>
     </div>
+
+
+    {{#if this.showContactForm}}
+      <div class="modal-backdrop" {{on "click" this.toggleContactForm}}>
+        <div class="contact-modal-box" {{on "click" this.stopPropagation}}>
+          <button
+            class="modal-close-button"
+            type="button"
+            aria-label="Close"
+            {{on "click" this.toggleContactForm}}
+          >
+            &times;
+          </button>
+
+          <ContactForm
+            @title="Contact for Rice/Wheat Products"
+            @whatsappNumber="918883029568"
+            @onClose={{this.toggleContactForm}}
+          />
+        </div>
+      </div>
+    {{/if}}
+
+
   </div>
 </section>

@@ -4,6 +4,9 @@ import { tracked } from '@glimmer/tracking';
 
 export default class BrassPopupComponent extends Component {
   @tracked selectedItem = 'brass-coils';
+  @tracked isContactPopupOpen = false;
+  @tracked selectedNumber = null;
+  @tracked selectedTitle = null;
 
   @action
   showImageFor(item) {
@@ -19,7 +22,6 @@ export default class BrassPopupComponent extends Component {
         return '/assets/brass-ingots.jpg';
       case 'brass-spare':
         return '/assets/brass-spare.jpg';
-
       default:
         return null;
     }
@@ -28,6 +30,9 @@ export default class BrassPopupComponent extends Component {
   @action
   closePopup() {
     this.selectedItem = null;
+    this.isContactPopupOpen = false;
+    this.selectedNumber = null;
+    this.selectedTitle = null;
     this.args.onClose?.();
   }
 
@@ -41,5 +46,13 @@ export default class BrassPopupComponent extends Component {
   @action
   stopPropagation(event) {
     event.stopPropagation();
+  }
+
+  @action
+  contactUs() {
+    this.selectedItem = null;
+    this.selectedNumber = '919566521289'; // Put your brass WhatsApp number here
+    this.selectedTitle = 'Contact for Brass Products';
+    this.isContactPopupOpen = true;
   }
 }

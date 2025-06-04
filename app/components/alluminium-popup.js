@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
-export default class BrassPopupComponent extends Component {
+export default class AlluminiumPopupComponent extends Component {
   @tracked selectedItem = null;
 
   @action
@@ -13,12 +13,12 @@ export default class BrassPopupComponent extends Component {
 
   getImagePath(item) {
     switch (item) {
-      case 'brass-coils':
-        return '/assets/brass-coils.jpg';
-      case 'brass-ingots':
-        return '/assets/brass-ingots.jpg';
-      case 'brass-spare':
-        return '/assets/brass-spare.jpg';
+      case 'alluminium-coils':
+        return '/assets/alluminium-coils.jpg';
+      case 'alluminium-ingots':
+        return '/assets/alluminium-ingots.jpg';
+      case 'alluminium-scrap':
+        return '/assets/alluminium-scrap.jpg';
 
       default:
         return null;

@@ -49,33 +49,257 @@
       <p style="font-size: 1rem; color: #333;">
         At Global Trade Solutions, we are more than just a service provider; we
         are your strategic partner in navigating the complexities of international
-        trade. Founded in 1998 by Sarah Thompson, our mission is to empower
-        businesses of all sizes to expand their horizons and achieve success in
-        the global marketplace. We pride ourselves on our commitment to
-        excellence, integrity, and customer satisfaction.
+        trade. Founded by Janasakthivel, our mission is to empower businesses of
+        all sizes to expand their horizons and achieve success in the global
+        marketplace. We pride ourselves on our commitment to excellence,
+        integrity, and customer satisfaction.
       </p>
     </div>
   </div>
   */
   {
-    "id": "DMHHuZeK",
-    "block": "[[[10,0],[14,5,\"display: flex; justify-content: center; align-items: center; padding: 5rem; background-color: #fdf3ee;\"],[12],[1,\"\\n  \"],[10,0],[14,5,\"width: 20%; border-bottom: 2px solid black; padding-right: 1rem;\"],[12],[1,\"\\n    \"],[10,\"h2\"],[14,5,\"font-size: 1.5rem;\"],[12],[1,\"Our Core\"],[13],[1,\"\\n  \"],[13],[1,\"\\n  \"],[10,0],[14,5,\"width: 60%; padding-left: 3rem;\"],[12],[1,\"\\n    \"],[10,\"h1\"],[14,5,\"font-size: 2rem; font-weight: bold; margin-bottom: 1rem;\"],[12],[1,\"About\\n      Us\"],[13],[1,\"\\n    \"],[10,2],[14,5,\"font-size: 1rem; color: #333;\"],[12],[1,\"\\n      At Global Trade Solutions, we are more than just a service provider; we\\n      are your strategic partner in navigating the complexities of international\\n      trade. Founded in 1998 by Sarah Thompson, our mission is to empower\\n      businesses of all sizes to expand their horizons and achieve success in\\n      the global marketplace. We pride ourselves on our commitment to\\n      excellence, integrity, and customer satisfaction.\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[],[\"div\",\"h2\",\"h1\",\"p\"]]",
+    "id": "+or+5tEo",
+    "block": "[[[10,0],[14,5,\"display: flex; justify-content: center; align-items: center; padding: 5rem; background-color: #fdf3ee;\"],[12],[1,\"\\n  \"],[10,0],[14,5,\"width: 20%; border-bottom: 2px solid black; padding-right: 1rem;\"],[12],[1,\"\\n    \"],[10,\"h2\"],[14,5,\"font-size: 1.5rem;\"],[12],[1,\"Our Core\"],[13],[1,\"\\n  \"],[13],[1,\"\\n  \"],[10,0],[14,5,\"width: 60%; padding-left: 3rem;\"],[12],[1,\"\\n    \"],[10,\"h1\"],[14,5,\"font-size: 2rem; font-weight: bold; margin-bottom: 1rem;\"],[12],[1,\"About\\n      Us\"],[13],[1,\"\\n    \"],[10,2],[14,5,\"font-size: 1rem; color: #333;\"],[12],[1,\"\\n      At Global Trade Solutions, we are more than just a service provider; we\\n      are your strategic partner in navigating the complexities of international\\n      trade. Founded by Janasakthivel, our mission is to empower businesses of\\n      all sizes to expand their horizons and achieve success in the global\\n      marketplace. We pride ourselves on our commitment to excellence,\\n      integrity, and customer satisfaction.\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[],[\"div\",\"h2\",\"h1\",\"p\"]]",
     "moduleName": "ember-app/components/about-us.hbs",
     "isStrictMode": false
   });
   var _default = _exports.default = (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, (0, _templateOnly.default)(undefined, "about-us"));
 });
-;define("ember-app/components/aluminium-popup", [], function () {
+;define("ember-app/components/alluminium-popup", ["exports", "@ember/component", "@glimmer/component", "@ember/object", "@glimmer/tracking", "@ember/template-factory"], function (_exports, _component, _component2, _object, _tracking, _templateFactory) {
   "use strict";
 
-  0; //eaimeta@70e063a35619d71feaimeta@70e063a35619d71f
-  throw new Error("`ember-app/components/aluminium-popup.js` does not contain a `default export`. Did you forget to export the component class?");
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _class, _descriptor;
+  0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@ember/object",0,"@glimmer/tracking",0,"@ember/template-factory",0,"@ember/component"eaimeta@70e063a35619d71f
+  function _initializerDefineProperty(e, i, r, l) { r && Object.defineProperty(e, i, { enumerable: r.enumerable, configurable: r.configurable, writable: r.writable, value: r.initializer ? r.initializer.call(l) : void 0 }); }
+  function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+  function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+  function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+  function _applyDecoratedDescriptor(i, e, r, n, l) { var a = {}; return Object.keys(n).forEach(function (i) { a[i] = n[i]; }), a.enumerable = !!a.enumerable, a.configurable = !!a.configurable, ("value" in a || a.initializer) && (a.writable = !0), a = r.slice().reverse().reduce(function (r, n) { return n(i, e, r) || r; }, a), l && void 0 !== a.initializer && (a.value = a.initializer ? a.initializer.call(l) : void 0, a.initializer = void 0), void 0 === a.initializer ? (Object.defineProperty(i, e, a), null) : a; }
+  function _initializerWarningHelper(r, e) { throw Error("Decorating class property failed. Please ensure that transform-class-properties is enabled and runs after the decorators transform."); }
+  const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
+  /*
+    <div class="modal-backdrop" {{on "click" this.handleBackdropClick}}>
+    <div class="modal-box relative" {{on "click" this.stopPropagation}}>
+  
+      <!-- Close Button -->
+      <button
+        class="modal-close-button"
+        {{on "click" this.closePopup}}
+        aria-label="Close"
+      >
+        &times;
+      </button>
+  
+      <!-- Image Display Area -->
+      <div class="modal-image-area">
+        {{#if this.selectedItem}}
+          <img
+            src={{this.getImagePath this.selectedItem}}
+            alt={{this.selectedItem}}
+            class="modal-image"
+          />
+        {{else}}
+          <p>Select an item to view its image</p>
+        {{/if}}
+  
+      </div>
+  
+      <!-- Buttons -->
+      <div class="modal-content">
+        <button
+          class="modal-button"
+          {{on "click" (fn this.showImageFor "alluminium-scrap")}}
+        >Alluminium Scrap</button>
+        <button
+          class="modal-button"
+          {{on "click" (fn this.showImageFor "alluminium-ingots")}}
+        >Ingots</button>
+        <button
+          class="modal-button"
+          {{on "click" (fn this.showImageFor "alluminium-coils")}}
+        >Coils</button>
+  
+        <button
+          class="modal-button modal-contact-button"
+          {{on "click" this.contactUs}}
+        >
+          Contact Us!
+        </button>
+      </div>
+  
+    </div>
+  </div>
+  */
+  {
+    "id": "yZPisQBH",
+    "block": "[[[11,0],[24,0,\"modal-backdrop\"],[4,[38,1],[\"click\",[30,0,[\"handleBackdropClick\"]]],null],[12],[1,\"\\n  \"],[11,0],[24,0,\"modal-box relative\"],[4,[38,1],[\"click\",[30,0,[\"stopPropagation\"]]],null],[12],[1,\"\\n\\n    \"],[3,\" Close Button \"],[1,\"\\n    \"],[11,\"button\"],[24,0,\"modal-close-button\"],[24,\"aria-label\",\"Close\"],[4,[38,1],[\"click\",[30,0,[\"closePopup\"]]],null],[12],[1,\"\\n      ×\\n    \"],[13],[1,\"\\n\\n    \"],[3,\" Image Display Area \"],[1,\"\\n    \"],[10,0],[14,0,\"modal-image-area\"],[12],[1,\"\\n\"],[41,[30,0,[\"selectedItem\"]],[[[1,\"        \"],[10,\"img\"],[15,\"src\",[28,[30,0,[\"getImagePath\"]],[[30,0,[\"selectedItem\"]]],null]],[15,\"alt\",[30,0,[\"selectedItem\"]]],[14,0,\"modal-image\"],[12],[13],[1,\"\\n\"]],[]],[[[1,\"        \"],[10,2],[12],[1,\"Select an item to view its image\"],[13],[1,\"\\n\"]],[]]],[1,\"\\n    \"],[13],[1,\"\\n\\n    \"],[3,\" Buttons \"],[1,\"\\n    \"],[10,0],[14,0,\"modal-content\"],[12],[1,\"\\n      \"],[11,\"button\"],[24,0,\"modal-button\"],[4,[38,1],[\"click\",[28,[37,6],[[30,0,[\"showImageFor\"]],\"alluminium-scrap\"],null]],null],[12],[1,\"Alluminium Scrap\"],[13],[1,\"\\n      \"],[11,\"button\"],[24,0,\"modal-button\"],[4,[38,1],[\"click\",[28,[37,6],[[30,0,[\"showImageFor\"]],\"alluminium-ingots\"],null]],null],[12],[1,\"Ingots\"],[13],[1,\"\\n      \"],[11,\"button\"],[24,0,\"modal-button\"],[4,[38,1],[\"click\",[28,[37,6],[[30,0,[\"showImageFor\"]],\"alluminium-coils\"],null]],null],[12],[1,\"Coils\"],[13],[1,\"\\n\\n      \"],[11,\"button\"],[24,0,\"modal-button modal-contact-button\"],[4,[38,1],[\"click\",[30,0,[\"contactUs\"]]],null],[12],[1,\"\\n        Contact Us!\\n      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n  \"],[13],[1,\"\\n\"],[13]],[],[\"div\",\"on\",\"button\",\"if\",\"img\",\"p\",\"fn\"]]",
+    "moduleName": "ember-app/components/alluminium-popup.hbs",
+    "isStrictMode": false
+  });
+  let AlluminiumPopupComponent = _exports.default = (_class = class AlluminiumPopupComponent extends _component2.default {
+    constructor(...args) {
+      super(...args);
+      _initializerDefineProperty(this, "selectedItem", _descriptor, this);
+    }
+    showImageFor(item) {
+      console.log('Selected:', item);
+      this.selectedItem = item;
+    }
+    getImagePath(item) {
+      switch (item) {
+        case 'alluminium-coils':
+          return '/assets/alluminium-coils.jpg';
+        case 'alluminium-ingots':
+          return '/assets/alluminium-ingots.jpg';
+        case 'alluminium-scrap':
+          return '/assets/alluminium-scrap.jpg';
+        default:
+          return null;
+      }
+    }
+    closePopup() {
+      this.selectedItem = null;
+      this.args.onClose?.();
+    }
+    handleBackdropClick(event) {
+      if (event.target.classList.contains('modal-backdrop')) {
+        this.closePopup();
+      }
+    }
+    stopPropagation(event) {
+      event.stopPropagation();
+    }
+  }, _descriptor = _applyDecoratedDescriptor(_class.prototype, "selectedItem", [_tracking.tracked], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return null;
+    }
+  }), _applyDecoratedDescriptor(_class.prototype, "showImageFor", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "showImageFor"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "closePopup", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "closePopup"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "handleBackdropClick", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "handleBackdropClick"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "stopPropagation", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "stopPropagation"), _class.prototype), _class);
+  (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, AlluminiumPopupComponent);
 });
-;define("ember-app/components/brass-popup", [], function () {
+;define("ember-app/components/brass-popup", ["exports", "@ember/component", "@glimmer/component", "@ember/object", "@glimmer/tracking", "@ember/template-factory"], function (_exports, _component, _component2, _object, _tracking, _templateFactory) {
   "use strict";
 
-  0; //eaimeta@70e063a35619d71feaimeta@70e063a35619d71f
-  throw new Error("`ember-app/components/brass-popup.js` does not contain a `default export`. Did you forget to export the component class?");
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _class, _descriptor;
+  0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@ember/object",0,"@glimmer/tracking",0,"@ember/template-factory",0,"@ember/component"eaimeta@70e063a35619d71f
+  function _initializerDefineProperty(e, i, r, l) { r && Object.defineProperty(e, i, { enumerable: r.enumerable, configurable: r.configurable, writable: r.writable, value: r.initializer ? r.initializer.call(l) : void 0 }); }
+  function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+  function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+  function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+  function _applyDecoratedDescriptor(i, e, r, n, l) { var a = {}; return Object.keys(n).forEach(function (i) { a[i] = n[i]; }), a.enumerable = !!a.enumerable, a.configurable = !!a.configurable, ("value" in a || a.initializer) && (a.writable = !0), a = r.slice().reverse().reduce(function (r, n) { return n(i, e, r) || r; }, a), l && void 0 !== a.initializer && (a.value = a.initializer ? a.initializer.call(l) : void 0, a.initializer = void 0), void 0 === a.initializer ? (Object.defineProperty(i, e, a), null) : a; }
+  function _initializerWarningHelper(r, e) { throw Error("Decorating class property failed. Please ensure that transform-class-properties is enabled and runs after the decorators transform."); }
+  const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
+  /*
+    <div class="modal-backdrop" {{on "click" this.handleBackdropClick}}>
+    <div class="modal-box relative" {{on "click" this.stopPropagation}}>
+  
+      <!-- Close Button -->
+      <button
+        class="modal-close-button"
+        {{on "click" this.closePopup}}
+        aria-label="Close"
+      >
+        &times;
+      </button>
+  
+      <!-- Image Display Area -->
+      <div class="modal-image-area">
+        {{#if this.selectedItem}}
+          <img
+            src={{this.getImagePath this.selectedItem}}
+            alt={{this.selectedItem}}
+            class="modal-image"
+          />
+        {{else}}
+          <p>Select an item to view its image</p>
+        {{/if}}
+  
+      </div>
+  
+      <!-- Buttons -->
+      <div class="modal-content">
+        <button
+          class="modal-button"
+          {{on "click" (fn this.showImageFor "brass-coils")}}
+        >Brass coils</button>
+        <button
+          class="modal-button"
+          {{on "click" (fn this.showImageFor "brass-ingots")}}
+        >Brass ingots</button>
+        <button
+          class="modal-button"
+          {{on "click" (fn this.showImageFor "brass-spare")}}
+        >Brass Spare parts</button>
+  
+        <button
+          class="modal-button modal-contact-button"
+          {{on "click" this.contactUs}}
+        >
+          Contact Us!
+        </button>
+      </div>
+  
+    </div>
+  </div>
+  */
+  {
+    "id": "sAOuSE9e",
+    "block": "[[[11,0],[24,0,\"modal-backdrop\"],[4,[38,1],[\"click\",[30,0,[\"handleBackdropClick\"]]],null],[12],[1,\"\\n  \"],[11,0],[24,0,\"modal-box relative\"],[4,[38,1],[\"click\",[30,0,[\"stopPropagation\"]]],null],[12],[1,\"\\n\\n    \"],[3,\" Close Button \"],[1,\"\\n    \"],[11,\"button\"],[24,0,\"modal-close-button\"],[24,\"aria-label\",\"Close\"],[4,[38,1],[\"click\",[30,0,[\"closePopup\"]]],null],[12],[1,\"\\n      ×\\n    \"],[13],[1,\"\\n\\n    \"],[3,\" Image Display Area \"],[1,\"\\n    \"],[10,0],[14,0,\"modal-image-area\"],[12],[1,\"\\n\"],[41,[30,0,[\"selectedItem\"]],[[[1,\"        \"],[10,\"img\"],[15,\"src\",[28,[30,0,[\"getImagePath\"]],[[30,0,[\"selectedItem\"]]],null]],[15,\"alt\",[30,0,[\"selectedItem\"]]],[14,0,\"modal-image\"],[12],[13],[1,\"\\n\"]],[]],[[[1,\"        \"],[10,2],[12],[1,\"Select an item to view its image\"],[13],[1,\"\\n\"]],[]]],[1,\"\\n    \"],[13],[1,\"\\n\\n    \"],[3,\" Buttons \"],[1,\"\\n    \"],[10,0],[14,0,\"modal-content\"],[12],[1,\"\\n      \"],[11,\"button\"],[24,0,\"modal-button\"],[4,[38,1],[\"click\",[28,[37,6],[[30,0,[\"showImageFor\"]],\"brass-coils\"],null]],null],[12],[1,\"Brass coils\"],[13],[1,\"\\n      \"],[11,\"button\"],[24,0,\"modal-button\"],[4,[38,1],[\"click\",[28,[37,6],[[30,0,[\"showImageFor\"]],\"brass-ingots\"],null]],null],[12],[1,\"Brass ingots\"],[13],[1,\"\\n      \"],[11,\"button\"],[24,0,\"modal-button\"],[4,[38,1],[\"click\",[28,[37,6],[[30,0,[\"showImageFor\"]],\"brass-spare\"],null]],null],[12],[1,\"Brass Spare parts\"],[13],[1,\"\\n\\n      \"],[11,\"button\"],[24,0,\"modal-button modal-contact-button\"],[4,[38,1],[\"click\",[30,0,[\"contactUs\"]]],null],[12],[1,\"\\n        Contact Us!\\n      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n  \"],[13],[1,\"\\n\"],[13]],[],[\"div\",\"on\",\"button\",\"if\",\"img\",\"p\",\"fn\"]]",
+    "moduleName": "ember-app/components/brass-popup.hbs",
+    "isStrictMode": false
+  });
+  let BrassPopupComponent = _exports.default = (_class = class BrassPopupComponent extends _component2.default {
+    constructor(...args) {
+      super(...args);
+      _initializerDefineProperty(this, "selectedItem", _descriptor, this);
+    }
+    showImageFor(item) {
+      console.log('Selected:', item);
+      this.selectedItem = item;
+    }
+    getImagePath(item) {
+      switch (item) {
+        case 'brass-coils':
+          return '/assets/brass-coils.jpg';
+        case 'brass-ingots':
+          return '/assets/brass-ingots.jpg';
+        case 'brass-spare':
+          return '/assets/brass-spare.jpg';
+        default:
+          return null;
+      }
+    }
+    closePopup() {
+      this.selectedItem = null;
+      this.args.onClose?.();
+    }
+    handleBackdropClick(event) {
+      if (event.target.classList.contains('modal-backdrop')) {
+        this.closePopup();
+      }
+    }
+    stopPropagation(event) {
+      event.stopPropagation();
+    }
+  }, _descriptor = _applyDecoratedDescriptor(_class.prototype, "selectedItem", [_tracking.tracked], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return null;
+    }
+  }), _applyDecoratedDescriptor(_class.prototype, "showImageFor", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "showImageFor"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "closePopup", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "closePopup"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "handleBackdropClick", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "handleBackdropClick"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "stopPropagation", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "stopPropagation"), _class.prototype), _class);
+  (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, BrassPopupComponent);
 });
 ;define("ember-app/components/copper-popup", ["exports", "@ember/component", "@glimmer/component", "@ember/object", "@glimmer/tracking", "@ember/template-factory"], function (_exports, _component, _component2, _object, _tracking, _templateFactory) {
   "use strict";
@@ -214,7 +438,7 @@
     value: true
   });
   _exports.default = void 0;
-  var _class, _descriptor;
+  var _class, _descriptor, _descriptor2, _descriptor3;
   0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@ember/object",0,"@glimmer/tracking",0,"@ember/template-factory",0,"@ember/component"eaimeta@70e063a35619d71f
   function _initializerDefineProperty(e, i, r, l) { r && Object.defineProperty(e, i, { enumerable: r.enumerable, configurable: r.configurable, writable: r.writable, value: r.initializer ? r.initializer.call(l) : void 0 }); }
   function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -249,7 +473,7 @@
       {{/if}}
   
       <!-- 2. Excellence -->
-      <div class="core-value-item">
+      <div class="core-value-item" {{on "click" this.toggleAlluminiumModal}}>
         <div class="core-value-image-wrapper small">
           <img
             src="/assets/alluminium.jpg"
@@ -262,8 +486,12 @@
           precision, consistency, and innovation.</p>
       </div>
   
+      {{#if this.showAlluminiumModal}}
+        <AlluminiumPopup @onClose={{this.toggleAlluminiumModal}} />
+      {{/if}}
+  
       <!-- 3. Teamwork -->
-      <div class="core-value-item">
+      <div class="core-value-item" {{on "click" this.toggleBrassModal}}>
         <div class="core-value-image-wrapper small">
           <img
             src="/assets/brass.jpg"
@@ -276,6 +504,9 @@
           and create greater value together.</p>
       </div>
   
+      {{#if this.showBrassModal}}
+        <BrassPopup @onClose={{this.toggleBrassModal}} />
+      {{/if}}
       <!-- 4. Innovation -->
       <div class="core-value-item">
         <div class="core-value-image-wrapper small">
@@ -293,29 +524,55 @@
   </section>
   */
   {
-    "id": "u7FiDSz4",
-    "block": "[[[10,\"section\"],[14,0,\"core-values-section\"],[12],[1,\"\\n  \"],[10,\"h2\"],[14,0,\"core-values-heading\"],[12],[1,\"Our Core Values\"],[13],[1,\"\\n\\n  \"],[10,0],[14,0,\"core-values-container\"],[12],[1,\"\\n    \"],[3,\" 1. Integrity \"],[1,\"\\n    \"],[11,0],[24,0,\"core-value-item\"],[4,[38,3],[\"click\",[30,0,[\"toggleCopperModal\"]]],null],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/copper.jpg\"],[14,\"alt\",\"Integrity\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Copper\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"\\n        We uphold the highest standards of honesty and transparency in all our\\n        dealings.\\n      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n\"],[41,[30,0,[\"showCopperModal\"]],[[[1,\"      \"],[8,[39,8],null,[[\"@onClose\"],[[30,0,[\"toggleCopperModal\"]]]],null],[1,\"\\n\"]],[]],null],[1,\"\\n    \"],[3,\" 2. Excellence \"],[1,\"\\n    \"],[10,0],[14,0,\"core-value-item\"],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/alluminium.jpg\"],[14,\"alt\",\"Excellence\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Alluminium\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"We deliver top-tier solutions with\\n        precision, consistency, and innovation.\"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n    \"],[3,\" 3. Teamwork \"],[1,\"\\n    \"],[10,0],[14,0,\"core-value-item\"],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/brass.jpg\"],[14,\"alt\",\"Teamwork\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Brass\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"We collaborate to achieve shared goals\\n        and create greater value together.\"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n    \"],[3,\" 4. Innovation \"],[1,\"\\n    \"],[10,0],[14,0,\"core-value-item\"],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/maize-rice.jpg\"],[14,\"alt\",\"Innovation\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Rice & Wheat\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"We drive progress by embracing new ideas\\n        and cutting-edge technology.\"],[13],[1,\"\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[],[\"section\",\"h2\",\"div\",\"on\",\"img\",\"h3\",\"p\",\"if\",\"copper-popup\"]]",
+    "id": "hNi+arqp",
+    "block": "[[[10,\"section\"],[14,0,\"core-values-section\"],[12],[1,\"\\n  \"],[10,\"h2\"],[14,0,\"core-values-heading\"],[12],[1,\"Our Core Values\"],[13],[1,\"\\n\\n  \"],[10,0],[14,0,\"core-values-container\"],[12],[1,\"\\n    \"],[3,\" 1. Integrity \"],[1,\"\\n    \"],[11,0],[24,0,\"core-value-item\"],[4,[38,3],[\"click\",[30,0,[\"toggleCopperModal\"]]],null],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/copper.jpg\"],[14,\"alt\",\"Integrity\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Copper\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"\\n        We uphold the highest standards of honesty and transparency in all our\\n        dealings.\\n      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n\"],[41,[30,0,[\"showCopperModal\"]],[[[1,\"      \"],[8,[39,8],null,[[\"@onClose\"],[[30,0,[\"toggleCopperModal\"]]]],null],[1,\"\\n\"]],[]],null],[1,\"\\n    \"],[3,\" 2. Excellence \"],[1,\"\\n    \"],[11,0],[24,0,\"core-value-item\"],[4,[38,3],[\"click\",[30,0,[\"toggleAlluminiumModal\"]]],null],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/alluminium.jpg\"],[14,\"alt\",\"Excellence\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Alluminium\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"We deliver top-tier solutions with\\n        precision, consistency, and innovation.\"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n\"],[41,[30,0,[\"showAlluminiumModal\"]],[[[1,\"      \"],[8,[39,9],null,[[\"@onClose\"],[[30,0,[\"toggleAlluminiumModal\"]]]],null],[1,\"\\n\"]],[]],null],[1,\"\\n    \"],[3,\" 3. Teamwork \"],[1,\"\\n    \"],[11,0],[24,0,\"core-value-item\"],[4,[38,3],[\"click\",[30,0,[\"toggleBrassModal\"]]],null],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/brass.jpg\"],[14,\"alt\",\"Teamwork\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Brass\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"We collaborate to achieve shared goals\\n        and create greater value together.\"],[13],[1,\"\\n    \"],[13],[1,\"\\n\\n\"],[41,[30,0,[\"showBrassModal\"]],[[[1,\"      \"],[8,[39,10],null,[[\"@onClose\"],[[30,0,[\"toggleBrassModal\"]]]],null],[1,\"\\n\"]],[]],null],[1,\"    \"],[3,\" 4. Innovation \"],[1,\"\\n    \"],[10,0],[14,0,\"core-value-item\"],[12],[1,\"\\n      \"],[10,0],[14,0,\"core-value-image-wrapper small\"],[12],[1,\"\\n        \"],[10,\"img\"],[14,\"src\",\"/assets/maize-rice.jpg\"],[14,\"alt\",\"Innovation\"],[14,0,\"core-value-image small\"],[12],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"h3\"],[14,0,\"core-value-title\"],[12],[1,\"Rice & Wheat\"],[13],[1,\"\\n      \"],[10,2],[14,0,\"core-value-description\"],[12],[1,\"We drive progress by embracing new ideas\\n        and cutting-edge technology.\"],[13],[1,\"\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[],[\"section\",\"h2\",\"div\",\"on\",\"img\",\"h3\",\"p\",\"if\",\"copper-popup\",\"alluminium-popup\",\"brass-popup\"]]",
     "moduleName": "ember-app/components/core-values.hbs",
     "isStrictMode": false
   });
   let CoreValuesComponent = _exports.default = (_class = class CoreValuesComponent extends _component2.default {
     constructor(...args) {
       super(...args);
-      _initializerDefineProperty(this, "showCopperModal", _descriptor, this);
+      _initializerDefineProperty(this, "showAlluminiumModal", _descriptor, this);
+      _initializerDefineProperty(this, "showCopperModal", _descriptor2, this);
+      _initializerDefineProperty(this, "showBrassModal", _descriptor3, this);
+    }
+    toggleAlluminiumModal() {
+      console.log('Parent: toggleAlluminiumModal called');
+      this.showAlluminiumModal = !this.showAlluminiumModal;
+      console.log(this.showAlluminiumModal);
     }
     toggleCopperModal() {
       console.log('Parent: toggleCopperModal called');
       this.showCopperModal = !this.showCopperModal;
       console.log(this.showCopperModal);
     }
-  }, _descriptor = _applyDecoratedDescriptor(_class.prototype, "showCopperModal", [_tracking.tracked], {
+    toggleBrassModal() {
+      console.log('Parent: toggleBrassModal called');
+      this.showBrassModal = !this.showBrassModal;
+      console.log(this.showBrassModal);
+    }
+  }, _descriptor = _applyDecoratedDescriptor(_class.prototype, "showAlluminiumModal", [_tracking.tracked], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: function () {
       return false;
     }
-  }), _applyDecoratedDescriptor(_class.prototype, "toggleCopperModal", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "toggleCopperModal"), _class.prototype), _class);
+  }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, "showCopperModal", [_tracking.tracked], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  }), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, "showBrassModal", [_tracking.tracked], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  }), _applyDecoratedDescriptor(_class.prototype, "toggleAlluminiumModal", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "toggleAlluminiumModal"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "toggleCopperModal", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "toggleCopperModal"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "toggleBrassModal", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "toggleBrassModal"), _class.prototype), _class);
   (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, CoreValuesComponent);
 });
 ;define("ember-app/components/india-map", ["exports", "@ember/component", "@glimmer/component", "@ember/object", "@ember/template-factory"], function (_exports, _component, _component2, _object, _templateFactory) {

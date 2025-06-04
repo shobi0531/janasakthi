@@ -24,7 +24,9 @@
   flex: 1 1 300px;
   max-width: 300px;
 }
-
+.core-value-item:hover {
+  transform: scale(1.1);
+}
 .core-value-image-wrapper {
   background-color: #fff3e0;
 

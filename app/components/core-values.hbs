@@ -23,7 +23,7 @@
     {{/if}}
 
     <!-- 2. Excellence -->
-    <div class="core-value-item">
+    <div class="core-value-item" {{on "click" this.toggleAlluminiumModal}}>
       <div class="core-value-image-wrapper small">
         <img
           src="/assets/alluminium.jpg"
@@ -36,8 +36,12 @@
         precision, consistency, and innovation.</p>
     </div>
 
+    {{#if this.showAlluminiumModal}}
+      <AlluminiumPopup @onClose={{this.toggleAlluminiumModal}} />
+    {{/if}}
+
     <!-- 3. Teamwork -->
-    <div class="core-value-item">
+    <div class="core-value-item" {{on "click" this.toggleBrassModal}}>
       <div class="core-value-image-wrapper small">
         <img
           src="/assets/brass.jpg"
@@ -50,6 +54,9 @@
         and create greater value together.</p>
     </div>
 
+    {{#if this.showBrassModal}}
+      <BrassPopup @onClose={{this.toggleBrassModal}} />
+    {{/if}}
     <!-- 4. Innovation -->
     <div class="core-value-item">
       <div class="core-value-image-wrapper small">

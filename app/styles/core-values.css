@@ -109,7 +109,10 @@
   margin-left: -50px;
 }
 
-.modal-button:hover {
+/* Add these new states */
+.modal-button:hover,
+.modal-button:active,
+.modal-button:focus {
   background-color: #fc8193;
 }
 
@@ -118,6 +121,14 @@
   background-color: #fbcfe8;
   font-weight: 600;
 }
+
+/* Add active/focus state for contact button too */
+.modal-contact-button:hover,
+.modal-contact-button:active,
+.modal-contact-button:focus {
+  background-color: #f9a8d4; /* or whatever hover color you want */
+}
+
 
 .modal-close-button {
   position: absolute;
